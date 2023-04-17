@@ -1,0 +1,29 @@
+
+.btn {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    background-color: rgb(109, 40, 27);
+    color: white;
+    transition: width .3s ease-in-out;
+    top: 0; 
+    right: 0;
+    width: 0px;
+    transform-origin: right;
+}
+
+.trash{
+    margin: auto;
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
+    transform-origin: right;
+    font-size: 20px;
+}
+
+li:hover .btn {
+    width: 50px;
+}
+
+li:hover .trash {  
+    opacity: 1;
+}
